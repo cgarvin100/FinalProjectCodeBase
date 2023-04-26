@@ -1,6 +1,4 @@
-pytest
-pytest_pycodestyle
 requests
 flask
-tkinter
-matplotlib
+pymodm
+dnspython
