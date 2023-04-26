@@ -1,4 +1,7 @@
+pytest
+pytest-pycodestyle
 requests
 flask
 pymodm
 dnspython
+tk
