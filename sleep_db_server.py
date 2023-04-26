@@ -83,4 +83,4 @@ def get_data_by_date_driver(date, mrn):
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0")
