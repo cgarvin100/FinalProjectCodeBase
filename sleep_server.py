@@ -174,8 +174,10 @@ def get_mrn_list():
     """ MRN List Retriever
     Returns a list of all MRNs (Medical Record Numbers) in the Patient
     collection.
+
     Args:
         None
+
     Returns:
         mrn_list (list): A list of integers representing the MRNs of
         all patients in the database.
@@ -310,6 +312,7 @@ def get_image_string(date, mrn):
     Args:
     date (str): the date to extract the image
     mrn (int): the MRN of the patient whose data is to be returned.
+
         """
     this_patient = Patient.objects.raw({"_id": int(mrn)}).first()
     for data_dict in this_patient.cpapData:
@@ -320,4 +323,4 @@ def get_image_string(date, mrn):
 
 if __name__ == '__main__':
     init_server()
-    app.run(host="0.0.0.0")
+    app.run()
