@@ -1,7 +1,13 @@
 pytest
-pytest-pycodestyle
+pytest_pycodestyle
 requests
 flask
+tk
+matplotlib
+pandas
+numpy
+scipy
+Pillow
+datetime
 pymodm
 dnspython
-tk
